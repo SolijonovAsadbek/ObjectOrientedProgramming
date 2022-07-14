@@ -23,7 +23,12 @@ class User:
 
 alex = User(fname='Alex', lname='Benjamin', age=12)
 edd = User(fname='Edd', lname='Sheeran', age=30)
-alex.fname = 'Ali'  #immutable ma`lumot
+# alex.fname = 'Ali'  #immutable ma`lumot
 print(alex.about)
 edd.greet(alex)
 alex.greet(edd)
+print(alex == edd)
+print(alex is edd)
+print(alex.__dict__)
+print(edd.__dict__)
+print(alex.__dict__ == edd.__dict__)
